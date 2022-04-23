@@ -19,7 +19,7 @@ int main()
     for (int i = 0; i < cant; i++)
     {
         printf("Ingrese un nombre: ");
-        fgets(buff, 100, stdin);
+        gets(buff);
         fflush(stdin);
         nombres[i] = (char*)malloc((strlen(buff)+1)*sizeof(char)); //Por cada fila le asigno la cantidad de columnas + 1 del espacio que tendra el nombre
         strcpy(nombres[i], buff);
